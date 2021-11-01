@@ -1,0 +1,379 @@
+
+:root{
+    /* ### Neutral */
+    --white--color:hsl(0, 0%, 100%);
+    --Grayish--blue:hsl(210, 4%, 67%);
+    --Very--dark--desaturated--blue: hsl(212, 27%, 19%);
+    --Very--dark--grayish--blue: hsl(213, 9%, 39%);
+    --Dark--grayish--blue: hsl(232, 10%, 55%);
+
+    /* primary*/
+    --Soft--red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark--desaturated--cyan: hsl(167, 40%, 24%);
+    --Dark--blue: hsl(198, 62%, 26%);
+    --Dark--moderate--cyan: hsla(168, 36%, 43%, 0.788);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size:10px;
+    overflow-x: hidden;
+}
+
+.header{
+    background-image: url("./images/mobile/image-header.jpg") ;
+   background-position: center;
+   background-size: cover;
+   height:100vh;
+   width:100%;
+
+}
+#logo{
+     margin-top:1rem;
+     margin-left:2rem;
+}
+
+.header-text h3{
+    text-transform: uppercase;
+    margin:10rem 0rem 0rem 6rem;
+    font-size:2rem;
+    width:70%;
+    letter-spacing:.3rem;
+    color: hsl(0, 0%, 100%);   
+}
+.header-text img{
+   margin:5.5rem 0rem 0rem 11rem;
+}
+
+.container-1,.container-2,.container-3{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+     
+}
+.egg{
+    background-image: url('./images/mobile/image-transform.jpg');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+}
+.transform,.stand{
+    background-color:var(--white--color);
+    position: relative;
+    margin-top:4rem;
+   
+   
+}
+.transform h3,.stand h3{
+    width:70%;
+    font-size:2rem;
+    font-weight:600;
+    margin:auto; 
+    line-height:2.5rem;
+    text-align: center;
+}
+.transform p,.stand p{
+    width:70%;
+    font-size:1rem;
+    margin:1.5rem auto;
+    text-align: center;
+    opacity:.5;
+    font-weight:400;
+}
+.transform h4,.stand h4{
+    margin:0rem  auto;
+    text-align: center;
+    font-size:1rem;
+}
+.transform h4::after,.stand h4::after{
+    content: "";
+    display: block;
+    border:2px solid var(--Yellow);
+    width:22%;
+    border-radius:2px;
+    margin:auto;
+}
+.storwberry{
+    background-image: url('./images/mobile/image-stand-out.jpg');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+}
+.stand h4::after{
+    content: "";
+   border:2px solid var(--Soft--red);
+    
+}
+
+.graphic{
+    background-image: url('./images/mobile/image-graphic-design.jpg');
+    width:100%;
+    height:90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color:var(--Very--dark--desaturated--blue);
+    
+}
+.photographers{
+    background-image: url('./images/mobile/image-photography.jpg');
+    width:100%;
+    height:90vh;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    color:var(--Very--dark--desaturated--blue);
+
+    
+}
+.graphic h3,.photographers h3{
+   position: absolute;
+   top:24rem;
+   left:4rem;
+   padding:auto;
+   font-size:2.7rem;
+}
+.graphic p,.photographers p{
+    position: absolute;
+    top:30rem;
+    left:3.3rem;
+    width:75%;
+    padding:auto;
+    font-size:1rem;
+    text-align: center;
+    
+ }
+ .container-4{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    margin-bottom:2rem;
+    
+    
+ }
+ .container-4 h2{
+     font-size:1.3rem;
+     opacity:.6;
+     width:100%;
+     word-spacing:.5rem;
+     padding:2rem  6rem;
+ }
+ .Emily img{
+        margin:2rem 0rem 2rem 9rem;
+        border-radius:30rem;
+        width:90px;     
+ }
+ .Thomas img{
+    margin:5rem 0rem 2rem 9rem;
+    border-radius:30rem;
+    width:90px;     
+}
+.Jennie img{
+    margin:3rem 0rem 2rem 9rem;
+    border-radius:30rem;
+    width:90px;     
+}
+ .Emily h4,.Thomas h4,.Jennie h4{
+     width:80%;
+     margin:0rem auto;
+     font-size:1.2rem;
+     text-align: center;
+     opacity:.7;
+ }
+ .Emily h3,.Thomas h3,.Jennie h3{
+    width:80%;
+    margin:1rem auto;
+    font-size:2rem;
+    text-align: center;
+ }
+ .Emily p,.Thomas p,.Jennie p{
+    width:80%;
+    margin:0rem auto 1rem auto;
+    font-size:1rem;
+    text-align: center;
+    opacity:.7;
+ }
+ .container-5{
+     display:grid;
+     grid-template-rows:1fr 1fr;
+     grid-template-columns:1fr 1fr;
+ }
+ .milkbottle{
+     background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+     background-position: center;
+     background-size:cover;
+     min-width:100px;
+     min-height:50vh;
+ }
+ .orange{
+    background-image: url('./images/mobile/image-gallery-orange.jpg');
+    background-position: center;
+    background-size:cover;
+    min-width:100px;
+    min-height:50vh;
+}
+.cone{
+    background-image: url('./images/mobile/image-gallery-cone.jpg');
+    background-position: center;
+    background-size:cover;
+    min-width:100px;
+    min-height:50vh;
+
+}
+.sugar{
+   background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+   background-position: center;
+   background-size:cover;
+   min-width:100px;
+   min-height:50vh;
+}
+.container-6{
+    background-color: var(--Dark--moderate--cyan);
+    color: var(--Dark--desaturated--cyan);
+    width:100%;
+    height:50vh;
+}
+
+.footer-img{
+padding:4rem 6rem;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    font-size:1rem;
+}
+.about p{
+    margin-left:2.3rem;
+}
+.icons{
+    font-size:1.5rem;
+     padding:2rem 0rem 0rem 7rem;
+
+}
+.icons i:nth-child(even){
+    padding:2rem 1.5rem;
+}
+@media (max-width:767px) {
+    
+
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav-links{
+    display: none;
+    margin-right:-90rem;
+}
+
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:6rem 0rem 0rem 0rem;
+    background-color: white;
+    padding:2.5rem;
+    font-size:2rem;
+    line-height:2rem;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    transition: 1s;
+}
+.active{
+  display:block;
+  margin-right:0rem;
+ position: absolute;
+ top:3rem;
+}
+ul li{
+     margin:rem 0rem 0rem 1rem;
+    list-style:none;
+    padding:.7rem;
+    opacity:.8;
+}
+a{
+    text-decoration: none;
+    color:var(--Very--dark--desaturated--blue);
+}
+#contact{
+    background-color:  hsl(51, 100%, 49%);
+    border-radius:25px;
+}
+
+.toggle-button{
+    position: absolute;
+    top:.7rem;
+    right:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius:10px;
+
+}
+
+}
+
+@media (min-width:768px) {
+
+    .toggle-button{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+    }
+    ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:6rem 0rem 0rem 0rem;
+        background-color:none;
+        padding:2.5rem;
+        font-size:2rem;
+        line-height:2rem;
+        color: rgba(0, 0, 0, 0.705);
+        font-weight: 600;
+        transition: 1s;
+    }
+    .container-1,.container-2,.container-3{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+        
+    }
+    .photographers,.graphic{
+        height:80vh;  
+    }
+    .container-4{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr;
+     }
+     .container-4 h2{
+        position: relative;
+        left:30rem;
+   }
+   .Thomas img,.Jennie img{
+    margin:8rem 0rem 2rem 10rem;
+    border-radius:30rem;
+    width:100px;     
+}
+}
+
